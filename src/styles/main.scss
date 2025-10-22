@@ -1,7 +1,9 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
+@import '/src/styles/utils/reset';
+@import '/src/styles/blocks/title';
 
 body {
-  background: $c-gray;
+  background: burlywood;
 }
