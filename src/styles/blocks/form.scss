@@ -63,8 +63,11 @@
     }
   }
   &__label {
-    &:not(:focus):not(:active) {
-      @include visually-hidden();
+    &:not(:active) {
+      @include visually-hidden;
+    }
+    &:not(:focus) {
+      @include visually-hidden;
     }
   }
 }

@@ -1,12 +1,13 @@
 .header {
   background-color: aquamarine;
-  background-image: url(/src/images/photos/mybike-header-mob.jpg);
+  background-image: url(/src/images/photos/mikkel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 50vh;
+  background-position: right;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 0 20px 88px;
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
