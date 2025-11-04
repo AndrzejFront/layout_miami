@@ -2,9 +2,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  margin-top: 40px;
 
   &__one {
+    width: 100%;
+    height: 100%;
     justify-self: center;
+    position: relative;
   }
 
   &__two {
