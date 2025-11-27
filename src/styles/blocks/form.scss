@@ -1,12 +1,4 @@
-@mixin visually-hidden() {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
+@use '../utils/mixins' as *;
 
 .form {
   display: flex;
@@ -20,6 +12,8 @@
     border: 0;
     width: 277px;
     height: 48px;
+    text-align: center;
+    color: #7e7e83;
 
     &::placeholder {
       font-family: Poppins, sans-serif;
@@ -35,6 +29,13 @@
       padding-left: 16px;
       padding-top: 14px;
     }
+    &:hover {
+      border: 1px solid #d5d7de;
+      color: #292929;
+    }
+    &:active {
+      border: 1px solid #292929;
+    }
   }
 
   &__textarea {
@@ -45,6 +46,16 @@
     background: #f8f8fa;
     width: 278px;
     height: 148px;
+    text-align: center;
+    padding-top: 14px;
+
+    &:hover {
+      border: 1px solid #d5d7de;
+      color: #292929;
+    }
+    &:active {
+      border: 1px solid #292929;
+    }
 
     &::placeholder {
       font-family: Poppins, sans-serif;
@@ -58,6 +69,7 @@
       opacity: 1;
       padding-left: 16px;
       padding-top: 14px;
+      text-align: start;
 
       color: #7e7e83;
     }

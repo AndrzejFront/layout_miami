@@ -4,10 +4,18 @@
   background-color: #1d1d1d;
   margin-top: 120px;
 
+  @media (min-width: 744px) {
+    margin: 0;
+  }
+
   &__image {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     width: 100%;
+
+    @media (min-width: 1260px) {
+      margin: 0;
+    }
   }
 }

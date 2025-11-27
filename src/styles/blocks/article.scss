@@ -1,4 +1,13 @@
 .article {
+  display: grid;
+  justify-content: center;
+
+  &__details {
+    @media (min-width: 1260px) {
+      grid-column: 1 / 13;
+    }
+  }
+
   &__paragraph {
     &--bold {
       font-family: Poppins, sans-serif;

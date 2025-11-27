@@ -1,5 +1,5 @@
 .button {
-  display: block;
+  display: grid;
   border: 2px solid #fff;
   border-radius: 40px;
   background-color: #fff;
@@ -15,6 +15,23 @@
   text-align: center;
   margin-top: 40px;
   margin-bottom: 80px;
+
+  @media (min-width: 744px) {
+    display: grid;
+    width: 392px;
+    height: 56px;
+    align-items: center;
+    justify-self: center;
+  }
+
+  @media (min-width: 1260px) {
+    display: grid;
+    width: 324px;
+    height: 56px;
+    align-content: flex-end;
+    justify-self: center;
+    grid-column: 1 / 13;
+  }
 
   &--primary {
     display: block;
@@ -33,5 +50,16 @@
     text-align: center;
     margin-top: 32px;
     margin-bottom: 48px;
+
+    @media (min-width: 744px) {
+      width: 288px;
+      height: 56px;
+    }
+    &:hover {
+      box-shadow: 1px 4px 16px #e8e8f066;
+    }
+    &:active {
+      box-shadow: 1px 4px 16px #e8e8f0a3;
+    }
   }
 }

@@ -7,13 +7,65 @@
   &__one {
     width: 100%;
     height: 100%;
-    justify-self: center;
-    position: relative;
+    object-fit: cover;
   }
 
   &__two {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
+
+    &:hover {
+      transform: scale(1.07);
+      overflow: hidden;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    &--big {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      &:hover {
+        border: 1px solid red;
+        box-shadow: 1px 4px 16px blue;
+      }
+
+      @media (min-width: 744px) {
+        display: grid;
+        grid-template-columns: repeat(6, 80px);
+        gap: 24px;
+        width: 392px;
+        height: 187px;
+      }
+
+      @media (min-width: 1260px) {
+        width: 672px;
+        height: 321px;
+      }
+    }
+    &--small {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      &:hover {
+        border: 1px solid blue;
+        box-shadow: 1px 4px 16px red;
+      }
+
+      @media (min-width: 744px) {
+        display: grid;
+        grid-template-columns: repeat(6, 80px);
+        gap: 24px;
+        width: 184px;
+        height: 187px;
+      }
+
+      @media (min-width: 1260px) {
+        width: 324px;
+        height: 320px;
+      }
+    }
   }
 }
