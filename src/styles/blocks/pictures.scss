@@ -5,22 +5,27 @@
   margin-top: 40px;
 
   &__one {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: auto;
+    height: auto;
+    grid-column: 1 / 13;
+    justify-self: center;
+    transition: transform 0.5s ease-in-out;
+    position: static;
+
+    &:hover {
+      position: static;
+      transform: scale(1.07);
+      margin-top: 10px;
+      width: 100%;
+    }
   }
 
   &__two {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
 
-    &:hover {
-      transform: scale(1.07);
-      overflow: hidden;
-      margin-top: 10px;
-      width: 100%;
-    }
+    display: grid;
 
     &--big {
       width: 100%;
