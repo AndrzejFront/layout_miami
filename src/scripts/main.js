@@ -1,13 +1,4 @@
-window.addEventListener('hashchange', () => {
-  if (window.location.hash === '#menu') {
-    const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
-    document.body.classList.add('body--with-menu');
-    document.body.style.paddingRight = scrollBarWidth + 'px';
-  } else {
-    document.body.classList.remove('body--with-menu');
-    document.body.style.paddingRight = '0';
-  }
-});
+
 
 const form = document.querySelector(".form");
 
@@ -21,4 +12,13 @@ form.addEventListener("submit", function (event) {
   console.log("Form submitted!", { name, email, message });
 
   alert("Form submitted without reloading!");
+});
+
+
+window.addEventListener('hashchange', () => {
+  if (window.location.hash === '#menu') {
+    document.body.classList.add('page__body--with-menu');
+  } else {
+    document.body.classList.remove('page__body--with-menu');
+  }
 });
