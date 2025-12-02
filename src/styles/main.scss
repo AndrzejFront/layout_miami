@@ -17,5 +17,8 @@
 @import '/src/styles/blocks/section';
 @import '/src/styles/blocks/hover';
 @import '/src/styles/blocks/phone';
-@import '/src/styles/blocks/body';
 @import '/src/styles/blocks/page';
+
+html {
+  scroll-behavior: smooth;
+}
