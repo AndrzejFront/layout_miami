@@ -16,11 +16,19 @@
       rel="stylesheet"
       href="src/styles/main.scss"
     />
-    <script
-      src="src/main.js"
-      defer
-    ></script>
+
   </head>
+  <script src="src/main.js"
+      defer></script>
+
+  <script>window.addEventListener('hashchange', () => {
+  if (window.location.hash === '#menu') {
+    document.body.classList.add('page__body--with-menu');
+  } else {
+    document.body.classList.remove('page__body--with-menu');
+  }
+});
+  </script>
 
   <body>
     <header class="header" id="header">
